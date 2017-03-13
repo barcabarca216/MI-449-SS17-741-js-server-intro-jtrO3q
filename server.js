@@ -34,12 +34,12 @@ var server = http.createServer(function (request, response) {
       + '<p>a mosquito</p>' }
 
     response.end('<h1>HILARIOUS RANDOM JOKES</h1>' + '<a href="/">TO THE HOME PAGE</a>' + one)
-  } else (request.url === '/lostloveandregrets') {
+  } else (request.url === '/lostloveandregrets')
   response.end(
     '<h1>This is not the page you are looking for</h1>'
     + '<a href="/">TO THE HOME PAGE</a>'
     + '<img src="https://s-media-cache-ak0.pinimg.com/originals/f8/c3/e8/f8c3e844d98cb3ca75a58806e11fe808.png" alt="goodhope">'
-    + '<a href="/">TO THE HOME PAGE</a>') }
+    + '<a href="/">TO THE HOME PAGE</a>')
 })
 // Listen on port 8080, so that we can reach the app at
 // localhost:8080
