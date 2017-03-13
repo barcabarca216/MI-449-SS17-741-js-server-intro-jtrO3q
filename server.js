@@ -9,9 +9,9 @@ var server = http.createServer(function (request, response) {
     response.end('<h1>CUTE ANIMALS</h1>' + '<a href="/">TO THE HOME PAGE</a>' + '<img src="http://i.dailymail.co.uk/i/pix/2013/07/03/article-0-1AA2F04F000005DC-736_638x415.jpg" alt="CUTE">')
   } else if (request.url === '/random-joke') {
     var jokes = Math.random()
-    if (jokes > 0.5) {
+    if (jokes > 0.66) {
       var one = '<p>knock knock</p>' + '<p>who\'s there?</p>' + '<p>An extraterrestrial.</p>' + '<p>Extraterrestrial who?</p>' + '<p>What - how many extra-terrestrials do you know?</p>'
-    } else if (jokes < 0.4) {
+    } else if (jokes < 0.33) {
       var one = '<p>Knock Knock</p>' + '<p>Who\'s there?</p>' + '<p>a broken pencil</p>' + '<p>a broken pencil who?</p>' + '<p>nevermind its pointless.</p>'
     } else { var one = '<p>knock knock</p>' + '<p>who\'s there?</p>' + '<p>Amos</p>' + '<p>Amos who</p>' + '<p>a mosquito</p>' }
 
