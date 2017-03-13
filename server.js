@@ -34,7 +34,7 @@ var server = http.createServer(function (request, response) {
       + '<p>a mosquito</p>' }
 
     response.end('<h1>HILARIOUS RANDOM JOKES</h1>' + '<a href="/">TO THE HOME PAGE</a>' + one)
-  } else (request.url === '/lostloveandregrets')
+  } else (request.url = '/lostloveandregrets')
   response.end(
     '<h1>This is not the page you are looking for</h1>'
     + '<a href="/">TO THE HOME PAGE</a>'
